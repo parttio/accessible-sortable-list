@@ -103,6 +103,11 @@
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>org.parttio</groupId>
+            <artifactId>accessibility-checker-for-vaadin</artifactId>
+            <version>0.0.16</version>
+        </dependency>
     </dependencies>
 
     <build>

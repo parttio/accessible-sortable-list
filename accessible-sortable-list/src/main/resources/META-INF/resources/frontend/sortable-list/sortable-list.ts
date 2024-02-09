@@ -77,7 +77,7 @@ class SortableList extends LitElement {
             aria-describedby="operation"
             @keydown=${(e:KeyboardEvent) => this._keyboardHandler(e, item)}
             tabindex="${((this._keyboardDragMode)?(this._dragItem && this._dragItem.id == item.id):(this._currentIndex == index))? "0": "-1"}"
-            ?aria-selected=${((this._keyboardDragMode)?(this._dragItem && this._dragItem.id == item.id):(this._currentIndex == index))}
+            aria-selected="${((this._keyboardDragMode)?(this._dragItem && this._dragItem.id == item.id):(this._currentIndex == index))}"
             role="option"
             data-index=${index}
             draggable="${this._dragItemIndex === undefined}"
