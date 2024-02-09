@@ -20,8 +20,19 @@ Open the devtools and check if there is an `Accessibility Checker` tab.
 
 ## How to use it
 
-TODO
+```
+  SortableList<PersonRecord> personRecordSortableList = new SortableList<>(PersonRecord::id);
+  personRecordSortableList.setItems(SampleDataGenerator.getPersonRecordList());
+  personRecordSortableList.setItemLabelGenerator(PersonRecord::name);
+  add(personRecordSortableList);
+```
+This will create a list that can be reordered with drag and drop and also with a keyboard (navigates on the item then press Space to activate, Arrows to move and Space to validate or Escape to cancel).
 
+The component requires a list of Beans (or Record) with 2 generators, a generator of Id (unique number) and String (that will be displayed as text).
+
+It has been tested with a screen reader (VoiceOver) and Safari/Chrome on MacOs.
+
+The pattern implemented for the component is coming from here: https://medium.com/salesforce-ux/4-major-patterns-for-accessible-drag-and-drop-1d43f64ebf09
 
 ## How to setup a development environment
 
