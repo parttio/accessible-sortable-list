@@ -6,7 +6,7 @@
 
     <groupId>org.parttio</groupId>
     <artifactId>accessible-sortable-list-demo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
 
     <name>accessible-sortable-list-demo</name>
     <packaging>jar</packaging>
